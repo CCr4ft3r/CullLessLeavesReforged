@@ -1,0 +1,17 @@
+{
+  "package": "dev.isxander.culllessleaves.mixins",
+  "required": true,
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cull-less-leaves.refmap.json",
+  "client": [
+    "BlockMixin",
+    "sodiumcompat.BlockOcclusionCacheMixin",
+    "sodiumcompat.LeavesBlockMixin",
+    "sodiumcompat.SodiumGameOptionPagesMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+
+}
