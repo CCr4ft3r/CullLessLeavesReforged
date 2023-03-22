@@ -24,12 +24,8 @@ of layers defined in the config.
 
 **[Works best with Rubidium](https://www.curseforge.com/minecraft/mc-mods/rubidium)**
 
-![comparison](https://i.imgur.com/yMUQxMX.png)
+![comparison](https://i.imgur.com/AtKUGxU.png)
 
 Rubidium Configuration
 
-![rubidium config](https://i.imgur.com/JE0uJ99.png)
-
-Mod Menu Configuration
-
-![mod menu config](https://i.imgur.com/RYNVj3b.png)
+![rubidium config](https://i.imgur.com/UbWqA7b.png)
