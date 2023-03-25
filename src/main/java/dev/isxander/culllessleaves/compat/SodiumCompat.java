@@ -20,7 +20,7 @@ public class SodiumCompat {
     };
 
     public static boolean isFancyLeaves() {
-        return SodiumClientMod.options().quality.leavesQuality.isFancy(Minecraft.getInstance().options.graphicsMode().get());
+        return SodiumClientMod.options().quality.leavesQuality.isFancy(Minecraft.getInstance().options.graphicsMode);
     }
 
     public static OptionStorage<CullLessLeavesConfig> getOptionStorage() {

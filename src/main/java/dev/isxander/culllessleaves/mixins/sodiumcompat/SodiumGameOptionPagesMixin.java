@@ -10,6 +10,7 @@ import me.jellysquid.mods.sodium.client.gui.options.control.ControlValueFormatte
 import me.jellysquid.mods.sodium.client.gui.options.control.SliderControl;
 import me.jellysquid.mods.sodium.client.gui.options.control.TickBoxControl;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.TranslatableComponent;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.ModifyVariable;
@@ -22,8 +23,8 @@ public class SodiumGameOptionPagesMixin {
     private static List<OptionGroup> addLeavesCulling(List<OptionGroup> groups) {
         groups.add(OptionGroup.createBuilder()
             .add(OptionImpl.createBuilder(boolean.class, SodiumCompat.getOptionStorage())
-                .setName(Component.translatable("cull-less-leaves.sodium.option.enabled"))
-                .setTooltip(Component.translatable("cull-less-leaves.sodium.option.enabled.description"))
+                .setName(new TranslatableComponent("cull-less-leaves.sodium.option.enabled"))
+                .setTooltip(new TranslatableComponent("cull-less-leaves.sodium.option.enabled.description"))
                 .setControl(TickBoxControl::new)
                 .setBinding((opts, value) -> opts.enabled = value, opts -> opts.enabled)
                 .setImpact(OptionImpact.MEDIUM)
@@ -31,8 +32,8 @@ public class SodiumGameOptionPagesMixin {
                 .build()
             )
             .add(OptionImpl.createBuilder(int.class, SodiumCompat.getOptionStorage())
-                .setName(Component.translatable("cull-less-leaves.sodium.option.depth"))
-                .setTooltip(Component.translatable("cull-less-leaves.option.depth.tooltip"))
+                .setName(new TranslatableComponent("cull-less-leaves.sodium.option.depth"))
+                .setTooltip(new TranslatableComponent("cull-less-leaves.option.depth.tooltip"))
                 .setControl(o -> new SliderControl(o, 1, 4, 1, ControlValueFormatter.number()))
                 .setBinding((opts, value) -> opts.depth = value, opts -> opts.depth)
                 .setImpact(OptionImpact.MEDIUM)
