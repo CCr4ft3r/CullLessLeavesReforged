@@ -37,7 +37,7 @@ public class LeavesBlockMixin extends Block {
      * <p>
      * this mixin simply reverts to vanilla behaviour
      *
-     * @see me.jellysquid.mods.sodium.mixin.features.render_layer.leaves.MixinLeavesBlock
+     * @see me.jellysquid.mods.sodium.mixin.features.options.render_layers.LeavesBlockMixin
      */
     @Override
     @SuppressWarnings("deprecation")

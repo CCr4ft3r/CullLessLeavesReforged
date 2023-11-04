@@ -18,7 +18,7 @@
 package dev.isxander.culllessleaves.mixins.sodiumcompat;
 
 import dev.isxander.culllessleaves.CullLessLeaves;
-import me.jellysquid.mods.sodium.client.render.occlusion.BlockOcclusionCache;
+import me.jellysquid.mods.sodium.client.render.chunk.compile.pipeline.BlockOcclusionCache;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.world.level.BlockGetter;
